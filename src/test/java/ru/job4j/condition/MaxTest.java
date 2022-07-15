@@ -12,6 +12,7 @@ public class MaxTest {
         int expected = 2;
         Assert.assertEquals(result, expected);
     }
+
     @Test
     public void whenMax10To2Then10() {
         int left = 10;
@@ -20,6 +21,7 @@ public class MaxTest {
         int expected = 10;
         Assert.assertEquals(result, expected);
     }
+
     @Test
     public void whenMax1To1Then1() {
         int left = 1;
