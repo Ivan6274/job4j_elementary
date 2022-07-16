@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PointTest {
+
     @Test
     public void when00to20then2() {
         double expected = 2;
