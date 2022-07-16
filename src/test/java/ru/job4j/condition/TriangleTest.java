@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TriangleTest {
+
     @Test
     public void whenExist() {
         double ab = 2.0;
