@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FitnessTest {
+
     @Test
     public void whenIvanGreatNik() {
         int ivan = 95;
