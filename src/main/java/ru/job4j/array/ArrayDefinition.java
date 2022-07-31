@@ -12,8 +12,8 @@ public class ArrayDefinition {
         names[2] = "Sergey Sergeev";
         names[3] = "Pavel Pavlov";
 
-        for (int i = 0; i < names.length; i++) {
-            System.out.println(names[i]);
+        for (String name : names) {
+            System.out.println(name);
         }
         System.out.println("Размер массива равен: " + ages.length);
         System.out.println("Размер массива равен: " + surnames.length);
