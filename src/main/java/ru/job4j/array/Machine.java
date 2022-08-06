@@ -9,10 +9,10 @@ public class Machine {
         int size = 0;
         int cashBack = money - price;
 
-        for (int index = 0; index < coins.length; index++) {
-            while (cashBack - coins[index] >= 0) {
-                rsl[size] = coins[index];
-                cashBack -= coins[index];
+        for (int coin : coins) {
+            while (cashBack - coin >= 0) {
+                rsl[size] = coin;
+                cashBack -= coin;
                 size++;
             }
         }
