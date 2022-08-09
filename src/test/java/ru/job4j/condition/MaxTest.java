@@ -7,28 +7,25 @@ public class MaxTest {
 
     @Test
     public void whenMax1To2Then2() {
-        int left = 1;
-        int right = 2;
-        int result = Max.max(left, right);
         int expected = 2;
-        Assert.assertEquals(result, expected);
+        Assert.assertEquals(Max.max(1, 2), expected);
     }
 
     @Test
-    public void whenMax10To2Then10() {
-        int left = 10;
-        int right = 2;
-        int result = Max.max(left, right);
-        int expected = 10;
-        Assert.assertEquals(result, expected);
+    public void whenMax2To33ToMinus1Then33() {
+        int expected = 33;
+        Assert.assertEquals(Max.max(2, 33, -1), expected);
     }
 
     @Test
-    public void whenMax1To1Then1() {
-        int left = 1;
-        int right = 1;
-        int result = Max.max(left, right);
-        int expected = 1;
-        Assert.assertEquals(result, expected);
+    public void whenMax0To3To16To22Then22() {
+        int expected = 22;
+        Assert.assertEquals(Max.max(0, 3, 16, 22), expected);
+    }
+
+    @Test
+    public void whenMax0To16To16To4Then16() {
+        int expected = 16;
+        Assert.assertEquals(Max.max(0, 16, 16, 4), expected);
     }
 }
